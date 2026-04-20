@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# 📝 Tugas Mandiri: Web Design System (Form Registrasi Event)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tugas ini mengimplementasikan konsep Atomic Design (Atoms & Organisms) menggunakan React, TypeScript, dan Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+Aplikasi telah di-deploy dan dapat diakses di:
+👉 **[https://tugas-from-login-event.vercel.app/]**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshot Hasil Akhir
+Berikut adalah tampilan form yang telah selesai dibangun:
 
-## Expanding the ESLint configuration
+![Hasil Form](./screenshot.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Fitur & Teknologi
+- **Framework:** React + Vite
+- **Styling:** Tailwind CSS v4 (Modern UI)
+- **Validation:** Zod (Skema validasi sisi klien)
+- **Form Handling:** React Hook Form
+- **Components:** - **Atoms:** FormInput, Button (Reusable)
+  - **Organisms:** RegistrationForm (Struktur Utama)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 👤 Identitas Mahasiswa
+- **Nama:** [ANGGA_DWI_RESKY_MAULANA]
+- **NIM:** [24090034]
+- **Prodi:** Teknik Informatika
